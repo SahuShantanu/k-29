@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Sahu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="./index.html" class="logo">Shantanu Sahu</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="./skills.html" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="projects-title">My Projects</h1>
+            <p class="projects-subtitle">Showcasing my creative work and technical expertise</p>
+        </div>
+    </section>
+
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="python">Python Projects</button>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/project1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="preview-btn" data-preview="project1"><a href="http://" style="color: white; text-decoration: none;">Preview</a></button>
+                            <div class="like-section">
+                                <button class="like-btn" data-project="project1">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <span class="like-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="./assets/project2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>A mobile app for managing daily tasks and schedules.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="preview-btn" data-preview="project2">Preview</button>
+                            <div class="like-section">
+                                <button class="like-btn" data-project="project2">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <span class="like-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <img src="./assets/project3.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analysis Tool</h3>
+                        <p>Python-based data analysis and visualization tool.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="preview-btn" data-preview="project3">Preview</button>
+                            <div class="like-section">
+                                <button class="like-btn" data-project="project3">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <span class="like-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/project4.jpg" alt="Project 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce website with payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="preview-btn" data-preview="project4">Preview</button>
+                            <div class="like-section">
+                                <button class="like-btn" data-project="project4">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <span class="like-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Modal -->
+    <div class="preview-modal" id="previewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="Project Preview" id="modalImage">
+                <div class="modal-project-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div id="modalTags" class="project-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Shantanu Sahu</h3>
+                <p class="footer-description">Full Stack Developer & Software Engineer</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shantanu Sahu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

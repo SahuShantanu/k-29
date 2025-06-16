@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Sahu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="./index.html" class="logo">Shantanu Sahu</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="./skills.html" class="nav-link">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <h1 class="contact-title">Get In Touch</h1>
+        <p class="contact-subtitle">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Let's connect! Choose your preferred method of communication.</p>
+                
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div class="detail-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <div class="detail-content">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="social-connect">
+                    <h3>Connect on Social Media</h3>
+                    <div class="social-grid">
+                        <a href="#" class="social-card whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                            <small>Click to chat</small>
+                        </a>
+                        <a href="#" class="social-card discord">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                            <small>username#1234</small>
+                        </a>
+                        <a href="#" class="social-card telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                            <small>@username</small>
+                        </a>
+                        <a href="#" class="social-card linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                            <small>Connect with me</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="loading-spinner"></span>
+                    </button>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Shantanu Sahu</h3>
+                <p class="footer-description">Full Stack Developer & Software Engineer</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shantanu Sahu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

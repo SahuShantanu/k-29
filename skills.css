@@ -1,0 +1,187 @@
+/* Skills Page Styles */
+
+/* Hero Section */
+.skills-hero {
+    padding: 100px 0 60px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.skills-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 0 2rem;
+    opacity: 0.9;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    border: 2px solid #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.skill-header i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #000;
+}
+
+.skill-header h2 {
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0;
+}
+
+.skill-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Tech Stack Badges */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-badge {
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Learning Progress */
+.learning-progress {
+    margin-top: 1.5rem;
+}
+
+.progress-item {
+    margin-bottom: 1rem;
+}
+
+.progress-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #000;
+    border-radius: 4px;
+    transition: width 1s ease;
+}
+
+/* Animation Classes */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-intro {
+        font-size: 1.1rem;
+        padding: 0 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+
+    .skill-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .tech-stack {
+        gap: 0.5rem;
+    }
+
+    .tech-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Removing Dark Mode Support for consistent black and white theme */
